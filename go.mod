@@ -1,4 +1,4 @@
-module Proxyscan
+module github.com/qiadapei/Proxyscan
 
 go 1.21
 
