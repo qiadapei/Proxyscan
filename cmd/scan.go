@@ -5,7 +5,7 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-func cmdscan() *cli.Command {
+func scan() *cli.Command {
 	return &cli.Command{
 		Name:        "scan",
 		Usage:       "let's scan proxy",
@@ -19,7 +19,4 @@ func cmdscan() *cli.Command {
 			&cli.StringFlag{Name: "output_file", Aliases: []string{"o"}, Value: "proxyscan.txt", Usage: "output_file"},
 		},
 	}
-}
-func scan(ctx *cli.Context) error {
-	return nil
 }
